@@ -1,0 +1,457 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>لیست اعلام قیمت و پیش‌فاکتور | سامانه جامع</title><style>
+:root{--ink:#223047;--muted:#748399;--line:#e0e8f1;--blue:#276dc5;--bg:#f2f5fa;--navy:#303b4a;--green:#21825b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:13px Tahoma,'Segoe UI',sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}input,select,textarea{outline:0}button:disabled{opacity:.5;cursor:not-allowed}header{background:#273341;color:white;padding:15px 25px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:16px;font-weight:bold}.head-end{display:flex;align-items:center;gap:15px}.wrapper{max-width:1540px;margin:24px auto;padding:0 24px}.title-line{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.title-line h1{font-size:23px;margin:0 0 7px}.muted{color:var(--muted)}.card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 5px 24px #354b6b0b}.stock-list{display:flex;gap:5px;flex-wrap:wrap;max-width:360px}.stock-item{display:inline-flex;align-items:center;gap:8px;padding:5px 8px;border-radius:7px;background:#eef7f2;border:1px solid #d5eade;font-size:11px;white-space:nowrap;color:#2a6e50}.stock-item strong{color:#105f3b}.stock-total{font-size:11px;font-weight:bold;color:#216d4b;margin-bottom:6px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:18px 0}.metric{padding:18px}.metric span{display:block;color:var(--muted);font-size:12px;margin-bottom:8px}.metric strong{font-size:22px}.filters{padding:20px;margin-bottom:18px}.sectionlabel{font-size:14px;font-weight:bold;margin-bottom:14px}.product-filtergrid{grid-template-columns:repeat(4,minmax(175px,1fr));}.group-cell{white-space:normal;min-width:245px;max-width:330px;line-height:1.8}.tableCard th{white-space:nowrap}.tableCard td{vertical-align:middle}.filtergrid{display:grid;grid-template-columns:repeat(4,minmax(175px,1fr));gap:12px;align-items:end}.field label{display:block;font-weight:bold;font-size:12px;margin-bottom:8px}.control{width:100%;padding:11px 12px;border-radius:8px;border:1px solid #cedaeb;background:#fff;color:var(--ink);min-height:41px;box-shadow:0 3px 8px #4c8dec14}.row-settlement{min-width:155px;padding:7px 9px;min-height:34px;font-size:12px}.control:focus{border-color:#4d93e9;box-shadow:0 0 0 3px #4d93e922}.control[readonly],.control:disabled{background:#edf1f6;color:#657389}.btn{border:0;padding:10px 15px;border-radius:8px;font-weight:bold;min-height:40px}.btnblue{background:var(--blue);color:white}.btngreen{background:#89cb51;color:#17350e}.btnlight{background:#eaf0f7;color:#47617d}.btnborder{border:1px solid #cbd9e8;background:white;color:#365579}.btnred{background:#fff1ef;color:#b54839}.tableCard{overflow:hidden}.tableTop{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;gap:10px}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;text-align:right;white-space:nowrap}th{background:#f4f7fb;font-weight:bold;color:#596a80;font-size:12px}th,td{border-bottom:1px solid #e9eff5;padding:13px 12px}tbody tr:hover{background:#f6faff}.name{font-weight:bold;color:#263f62}.tiny{font-size:11px}.tag{display:inline-block;padding:6px 10px;border-radius:30px;font-size:11px;font-weight:bold;white-space:nowrap}.internal{background:#e5f5ed;color:#197348}.inquiry{background:#fff1da;color:#99610f}.steel{background:#e8efff;color:#3562aa}.ok{color:#168452}.warning{color:#bf7d23}.num{direction:ltr;unicode-bidi:isolate;text-align:right}.cartIcon{width:35px;height:35px;border:0;border-radius:9px;background:#e4f0ff;color:#155da9;font-size:19px}.cartIcon:hover{background:#256dc0;color:white}.tableFooter{padding:12px 18px;color:var(--muted);display:flex;justify-content:space-between}.cart-section{margin-top:18px;padding:18px}.cart-section h2{font-size:17px}.empty{padding:24px;text-align:center;color:var(--muted)}.notice{background:#eaf4ff;color:#1a568f;border:1px solid #c6dfff;padding:12px 14px;line-height:2;border-radius:9px}.note-warn{background:#fff8e7;border-color:#f0dda4;color:#835b1a}.overlay{position:fixed;inset:0;background:#132338a3;z-index:10;display:none;justify-content:center;align-items:center;padding:14px}.overlay.open{display:flex}.modal{width:min(1440px,100%);max-height:96vh;overflow-y:auto;background:white;border-radius:17px;box-shadow:0 20px 65px #10203a40;padding:15px 20px 20px;border:1px solid #bdc8d4}.modalHeading{background:#424448;border-radius:7px;color:white;text-align:center;padding:12px;margin:8px 0 20px;font-weight:bold;box-shadow:0 4px 9px #4778ad4d}.close{float:left;border:0;border-radius:50%;background:#d7d9dd;color:white;width:32px;height:32px;font-size:24px;font-weight:bold}.formgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:15px 18px;align-items:end}.span12{grid-column:span 12}.span8{grid-column:span 8}.span7{grid-column:span 7}.span6{grid-column:span 6}.span5{grid-column:span 5}.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}.radios,.checkwrap{display:flex;gap:15px;align-items:center;border-radius:7px;background:#e6e9ef;padding:12px;min-height:41px}.checkwrap{justify-content:center}.radios input,.checkwrap input{accent-color:#2877da}.info-strip{grid-column:span 12;display:flex;gap:10px;align-items:center;padding:11px 13px;background:#edf5ff;border:1px solid #bbdafb;border-radius:8px;color:#1c60a5;line-height:1.8}.formfoot{display:flex;justify-content:space-between;border-top:1px solid #e5edf5;padding-top:14px;margin-top:18px;gap:8px}.line{height:1px;background:var(--line);margin:12px 0}.summarygrid{display:flex;flex-wrap:wrap;gap:12px}.summarygrid>span{background:#f4f7fb;border-radius:7px;padding:10px}.error{color:#b91c1c;margin-top:10px;min-height:16px}.linklike{color:#256dc0;cursor:pointer;background:transparent;border:0}.popup-title{font-size:15px;font-weight:bold}.bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:14px}.price-pill{background:#e8f2fe;color:#235d9a;padding:8px 12px;border-radius:20px}.help{padding:13px 16px;line-height:2;margin-top:18px}.footer-alert{font-size:11px;color:#6d7c8d;margin:12px 0}.toast{position:fixed;bottom:24px;left:24px;background:#1e684b;color:white;padding:14px 20px;z-index:30;border-radius:9px;box-shadow:0 8px 26px #2225;display:none;max-width:430px;line-height:1.8}.toolbar-inline{display:flex;gap:10px;align-items:center;flex-wrap:wrap}@media(max-width:1100px){.filtergrid{grid-template-columns:repeat(2,1fr)}.filtergrid .field:first-child{grid-column:span 2}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:740px){.wrapper{padding:0 12px}.metrics{grid-template-columns:repeat(2,1fr)}.filtergrid{grid-template-columns:1fr}.filtergrid .field:first-child{grid-column:span 1}.formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.formgrid>.field,.formgrid>.info-strip{grid-column:span 2}.modal{max-height:98vh}.title-line h1{font-size:18px}}
+ .toolbar-inline .cartIcon{flex-shrink:0} #rows td{vertical-align:middle} #rows td:nth-child(8){min-width:185px;line-height:1.7} #rows td:nth-child(9){min-width:230px} #requestsPanel{border-color:#c8dcf1}.raw-price-cell{min-width:235px;line-height:1.8}.raw-price-line{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}.raw-price-line+.raw-price-line{border-top:1px dashed #d5e0ed;margin-top:7px;padding-top:7px}.raw-price-label{color:#60738a;font-size:11px}.raw-price-value{font-weight:bold;color:#835c21}.raw-request{border:1px solid #bbd4f0;background:#edf6ff;color:#1a62a4;border-radius:7px;padding:3px 8px;font-size:12px;font-weight:bold;cursor:pointer}.raw-request:hover{background:#dcecff} 
+.source-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:5px 9px;border-radius:16px;margin-top:7px;white-space:nowrap}.source-internal{background:#e6f5ed;color:#166b43;border:1px solid #bce1cc}.source-inquiry{background:#ecf2ff;color:#3159a0;border:1px solid #cfddfc}.internal-record{background:#fbfffc}.inquiry-record{background:#fafbff}.source-legend{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.raw-only-inquiry{min-width:215px;padding:4px 0}.raw-only-inquiry .raw-price-value{color:#365c9a}.raw-price-inline{display:inline-flex;align-items:baseline;gap:7px;flex-wrap:nowrap;white-space:nowrap}.raw-price-time{display:inline-flex;align-items:center;gap:3px;margin:0;padding:0;font-size:9px;font-weight:400;color:#8996a8;white-space:nowrap;direction:rtl;background:transparent;border:0;width:auto;max-width:none}.raw-price-time .clock{font-size:9px;color:#9aa6b7}
+
+.trend-button{white-space:nowrap;background:#edf4ff;color:#2465ac;border:1px solid #c9dff7;border-radius:9px;padding:9px 11px;font-weight:bold}.trend-button:hover{background:#dceafe}.trend-modal{width:min(930px,96vw)}.trend-header{display:flex;align-items:center;justify-content:space-between;gap:14px}.trend-select{max-width:280px}.trend-chart{width:100%;height:auto;display:block;background:linear-gradient(#fff,#f8fbff);border:1px solid #e0e9f5;border-radius:12px}.trend-legend{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0}.trend-dot{width:9px;height:9px;background:#2776c8;border-radius:50%;display:inline-block}.trend-up{color:#b45235}.trend-down{color:#13805a}.trend-note{color:#60738b;font-size:11px;line-height:2;margin:12px 0}
+
+.trend-cell{min-width:190px}.inline-trend{display:flex;flex-direction:column;gap:5px;min-width:170px}.inline-trend svg{width:170px;height:52px;display:block}.inline-trend .axisline{stroke:#e6edf5;stroke-width:1}.inline-trend .spark{fill:none;stroke:#2b78c6;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.inline-trend .dot{fill:#2b78c6}.inline-trend .labels{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#7a8798}.inline-trend .summary{font-size:10px;color:#5e6f85}.inline-trend .summary.up{color:#198754}.inline-trend .summary.down{color:#c64545}.inline-trend .summary.flat{color:#5e6f85}
+
+.change-cell{min-width:125px}.price-change{display:flex;flex-direction:column;gap:5px;white-space:nowrap;align-items:flex-start}.change-top{display:inline-flex;gap:6px;align-items:center;font-size:12px}.change-arrow{font-size:21px;font-weight:900;line-height:1}.change-bottom{font-size:11px}.price-change.up{color:#168451}.price-change.down{color:#c83f49}.price-change.flat{color:#67758a}
+.commerce-settlement{font-size:10px;font-weight:normal;color:#2563a6;background:#ebf4ff;padding:2px 5px;border-radius:5px;margin-inline-start:4px}.sales-unit{white-space:nowrap;font-size:12px;font-weight:600;color:#425870}.trend-period-filter{display:flex;gap:8px;align-items:center;white-space:nowrap}.trend-period-filter label{font-size:12px;color:#51657c}.trend-period-filter select{width:220px;padding:7px 10px}.tableTop{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.tableTop>.muted{flex:1;min-width:220px}
+.monthly-extremes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 16px}.extreme-card{padding:14px 16px;border:1px solid #dce8ed;border-radius:12px;background:#f8fafc;display:flex;flex-direction:column;gap:8px}.extreme-card span{font-size:12px;color:#5c6d80}.extreme-card strong{font-size:19px;font-weight:700;direction:ltr;text-align:right;font-variant-numeric:tabular-nums}.extreme-card small{color:#758397;font-size:11px}.extreme-card.min{background:#f1faf5;border-color:#d0e9da}.extreme-card.min strong{color:#188451}.extreme-card.max{background:#fff5f4;border-color:#f1d8d5}.extreme-card.max strong{color:#c84a43}@media(max-width:580px){.monthly-extremes{grid-template-columns:1fr}}
+
+#rows td.group-cell {min-width:235px;max-width:295px;line-height:1.8;white-space:normal}
+#rows td.change-cell {min-width:120px}
+#rows td.trend-cell {min-width:128px}
+#rows td.raw-price-cell {min-width:220px}
+#rows td {vertical-align:middle}
+#rows .row-settlement {min-width:175px}
+.scroll {overflow-x:auto}
+
+/* کد کالای راهکارانی: نمایش مستقل و کامل به صورت پانزده رقم لاتین */
+th:first-child,.rahkaran-code-cell{min-width:170px;white-space:nowrap;text-align:center}
+.rahkaran-code{display:inline-block;direction:ltr;unicode-bidi:isolate;white-space:nowrap;letter-spacing:.5px;font:700 14px Consolas,'Courier New',monospace;color:#183a66;background:#eff6ff;border:1px solid #d6e6fa;border-radius:6px;padding:7px 9px}
+ 
+/* جدول نسخه قبلی + تغییر عرض دستی، بدون تبدیل به کارت */
+#priceGrid{table-layout:fixed;width:2180px;min-width:100%;border-collapse:collapse}
+#priceGrid th,#priceGrid td{white-space:normal;overflow-wrap:anywhere;vertical-align:middle}
+#priceGrid th{position:relative;user-select:none;line-height:1.7;overflow:visible;padding-left:14px}
+#priceGrid th .resize-grip{position:absolute;inset-block:0;left:-5px;width:10px;cursor:col-resize;z-index:4;touch-action:none}
+#priceGrid th .resize-grip::after{content:"";position:absolute;left:4px;top:22%;height:56%;width:2px;background:#afc3df;border-radius:2px;opacity:.65}
+#priceGrid th .resize-grip:hover::after,#priceGrid th .resize-grip.active::after{background:#2875c2;opacity:1;width:3px}
+#priceGrid .group-cell{min-width:0;max-width:none;line-height:1.7}
+#priceGrid .rahkaran-code-cell{white-space:nowrap;overflow-wrap:normal}
+#priceGrid .rahkaran-code{white-space:nowrap;font-size:11px;letter-spacing:0}
+#priceGrid .row-settlement{min-width:0;width:100%}
+#priceGrid .stock-list{max-width:none}
+#priceGrid .stock-item{white-space:normal}
+#priceGrid .raw-price-inline{flex-wrap:wrap}
+.tableCard .scroll{overflow-x:auto;overflow-y:visible}
+.tableCard .tableTop{flex-wrap:wrap}
+.reset-widths{border:1px solid #ccd8ea;background:#f4f8ff;border-radius:7px;color:#385a86;padding:7px 9px;font-size:11px;cursor:pointer}
+body.resizing-columns,body.resizing-columns *{cursor:col-resize!important;user-select:none!important}
+</style></head><body>
+<header><div class="brand">سامانه جامع | مدیریت فروش و اعلام قیمت</div><div class="head-end"><span>پیش‌فاکتورهای موقت</span><button class="btn btnlight" onclick="scrollCart()">🛒 سبد پیش‌فاکتور <span id="headerCount">(۰)</span></button></div></header>
+<main class="wrapper"><div class="title-line"><div><h1>لیست اعلام قیمت کالاها</h1><div class="muted">لیست اعلام قیمت انبار داخلی و استعلامی؛ مرجع قیمت فروش واحد مهندسی فروش</div></div><span class="price-pill">◷ همه قیمت‌ها نمونه‌اند؛ مرجع واقعی واحد مهندسی فروش است</span></div>
+<div class="metrics"><div class="metric card"><span>کل اعلام قیمت‌ها</span><strong id="allCount">۰</strong></div><div class="metric card"><span>قیمت‌های انبار داخلی</span><strong id="internalCount">۰</strong></div><div class="metric card"><span>قیمت‌های استعلامی</span><strong id="inquiryCount">۰</strong></div><div class="metric card"><span>مجموع موجودی انبارهای داخلی (کیلوگرم)</span><strong id="stockCount">۰</strong></div></div>
+<section class="card filters"><div class="sectionlabel">⌕ جست‌وجو و فیلتر اعلام قیمت‌ها</div><div class="filtergrid product-filtergrid">
+<div class="field"><label for="nameFilter">جست‌وجوی کالا / کد راهکاران</label><input class="control" id="nameFilter" placeholder="نام کالا، گروه کالا یا کد راهکاران" oninput="render()"></div>
+<div class="field"><label for="shapeFilter">شکل کالا</label><select class="control" id="shapeFilter" onchange="render()"><option value="">همه شکل‌ها</option></select></div>
+<div class="field"><label for="materialFilter">نوع ماده</label><select class="control" id="materialFilter" onchange="render()"><option value="">همه انواع ماده</option></select></div>
+<div class="field"><label for="gradeFilter">گرید</label><select class="control" id="gradeFilter" onchange="render()"><option value="">همه گریدها</option></select></div>
+<div class="field"><label for="specFilter">مشخصه</label><select class="control" id="specFilter" onchange="render()"><option value="">همه مشخصه‌ها</option></select></div>
+<div class="field"><label for="makerFilter">سازنده کالا</label><select class="control" id="makerFilter" onchange="render()"><option value="">همه سازنده‌ها</option></select></div>
+<div class="field"><label for="settlementFilter">فیلتر روش تسویه</label><select class="control" id="settlementFilter" onchange="rowSelected.clear();render()"><option value="نقد پای بار" selected>نقد پای بار</option><option value="عرف ۵ روز">عرف ۵ روز</option><option value="عرف از ۶ روز تا ۱۵ روز">عرف از ۶ روز تا ۱۵ روز</option><option value="عرف ۱ ماهه">عرف ۱ ماهه</option><option value="عرف از ۳۵ الی ۴۵ روز">عرف از ۳۵ الی ۴۵ روز</option><option value="عرف ۲ ماهه">عرف ۲ ماهه</option><option value="عرف ۳ ماهه">عرف ۳ ماهه</option></select></div>
+<div class="field"><label for="sourceFilter">منبع قیمت</label><select class="control" id="sourceFilter" onchange="render()"><option value="">همه منابع</option><option value="internal">انبار داخلی</option><option value="inquiry">کالای استعلامی</option></select></div>
+<button class="btn btnborder" onclick="resetFilters()">↻ پاک‌کردن فیلترها</button></div></section>
+<section class="card" style="padding:16px 20px;margin:0 0 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><b>لیست اعلام قیمت کالاها</b><div class="muted tiny" style="margin-top:8px">قیمت فروش در ستون اصلی باقی است. منبع قیمت در ستون مستقلی برای هر ردیف مشخص است. قیمت پایه تنها برای کاربران مجاز نمایش داده می‌شود. فیلترهای کالا بر اساس مپینگ مشخصات اعمال می‌شوند.</div></div><div class="toolbar-inline"><label><input type="checkbox" id="rawAccess" checked onchange="render()"> مجوز مشاهده قیمت بازرگانی (شبیه‌سازی)</label><label><input type="checkbox" id="adminMode" checked onchange="render();renderRequests()"> حالت ادمین (آزمایشی)</label></div></section>
+<section class="card" id="requestsPanel" style="padding:18px;margin:0 0 18px"><div class="title-line"><b>درخواست‌های استعلام بازار</b><span class="muted tiny">درخواست جدید قیمت فروش را تغییر نمی‌دهد؛ پس از دریافت قیمت تأمین‌کننده، تأیید قیمت فروش توسط مهندسی فروش ضروری است.</span></div><div id="requestList" class="muted" style="margin-top:12px">درخواستی ثبت نشده است.</div></section>
+<section class="card tableCard"><div class="tableTop"><b>قیمت‌های قابل مشاهده <span class="muted" id="matchCount"></span></b><span class="muted tiny">نمایش مشابه دموی قبلی با مشخصات راهکاران، نمودار روند، تغییر قیمت و سبد؛ تمام قیمت‌ها و سوابق دمو نمونه هستند.</span><button type="button" class="reset-widths" onclick="resetPriceColumns()" title="بازگرداندن اندازه اولیه ستون‌ها">↺ عرض پیش‌فرض ستون‌ها</button><span class="muted tiny">برای تغییر عرض، لبه چپ عنوان هر ستون را با ماوس بکشید.</span></div><div class="scroll"><table id="priceGrid" aria-label="لیست اعلام قیمت‌ها"><thead><tr><th>کد کالای راهکارانی</th><th>گروه کالا</th><th>نام کالا</th><th>منبع قیمت</th><th class="raw-column">قیمت پایه</th><th>روش تسویه</th><th>قیمت نهایی</th><th>زمان اعلام قیمت پایه</th><th>موجودی</th><th>مشاهده روند</th><th>تغییر قیمت</th><th>عملیات</th></tr></thead><tbody id="rows"></tbody></table></div><div class="tableFooter"><span id="shownCount"></span><span>قیمت‌های بازرگانی فقط برای کاربران دارای مجوز و صرفاً جهت اطلاع هستند و به‌عنوان قیمت فروش به سبد اضافه نمی‌شود؛ موجودی رزرو نمی‌شود.</span></div></section>
+<section id="basket" class="card cart-section"><div class="title-line"><h2>🛒 سبد پیش‌فاکتور <span id="basketCount" class="tag steel">۰ قلم</span></h2><button class="btn btnblue" onclick="openReview()">بررسی و ثبت آزمایشی پیش‌فاکتور ←</button></div><div class="scroll"><table><thead><tr><th>ردیف</th><th>کالا / سایز</th><th>منبع قیمت</th><th>روش تسویه</th><th>مقدار / واحد</th><th>قیمت واحد</th><th>قیمت کل (ریال)</th><th>انبار پیشنهادی</th><th>حذف</th></tr></thead><tbody id="basketRows"><tr><td colspan="9" class="empty">هنوز کالایی به سبد اضافه نشده است.</td></tr></tbody></table></div><div class="bottom"><span class="notice">انتخاب انبار صرفاً پیشنهادی است؛ نه رزرو و نه کاهش موجودی انجام نمی‌شود.</span><strong id="totalCart">جمع کل: ۰ ریال</strong></div></section><div class="notice help note-warn">این دمو دارای اطلاعات فرضی است. لیست به صورت پیش‌فرض فقط قیمت نقد پای بار را نمایش می‌دهد. با تغییر روش تسویه در هر ردیف، قیمت و تاریخ متناسب به‌روزرسانی می‌شود. برای تمام قیمت‌ها زمان اعلام (تاریخ و ساعت) نمایش داده می‌شود. برای تأمین بیرونی فقط آخرین قیمت فروش اعلام‌شده مهندسی فروش برای هر کالا، سایز و روش تسویه نمایش داده می‌شود؛ اعتبار زمانی استعلام اهمیت دارد؛ تسویه باید در سطح هر اعلام قیمت مشخص باشد. موجودی هر انبار داخلی جداگانه و فقط بر حسب کیلوگرم نمایش داده می‌شود. عدم وجود موجودی مانع ثبت پیش‌فاکتور نیست.</div></main>
+<div id="modalOverlay" class="overlay"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" onclick="closeModal()" aria-label="بستن">×</button><div class="modalHeading" id="modalTitle">ایجاد پیش فاکتور موقت / افزودن قلم به سبد</div><div class="formgrid">
+<div class="field span4"><div class="radios"><label><input type="radio" name="party" value="customer" checked onchange="partyChange()"> مشتری دارای اطلاعات</label><label><input type="radio" name="party" value="lead" onchange="partyChange()"> سرنخ</label></div></div><div class="field span2"><div class="checkwrap"><label><input id="official" type="checkbox" checked> پیش فاکتور رسمی</label></div></div><div class="field span2"><label>شماره پیش فاکتور</label><input id="invoiceNo" class="control" placeholder="پس از ثبت"></div><div class="field span4"></div>
+<div class="field span5"><label>انتخاب کارمند فروش</label><select id="seller" class="control"><option>فرزاد حیدری</option><option>کارشناس فروش نمونه</option></select></div><div class="field span7"><label>توضیحات پیش فاکتور</label><input id="invoiceDescription" class="control" placeholder="شرح اختیاری پیش‌فاکتور"></div>
+<div class="field span12"><label>انتخاب مشتری</label><select id="customer" class="control" onchange="clientChange('customer')"><option value="">یک مورد انتخاب کنید</option><option value="شرکت فولاد نمونه|09121234567">شرکت فولاد نمونه</option><option value="شرکت سازه آزمایشی|09123334455">شرکت سازه آزمایشی</option></select></div>
+<div class="field span12"><label>انتخاب سرنخ</label><select id="lead" class="control" onchange="clientChange('lead')" disabled><option value="">یک مورد انتخاب کنید</option><option value="مشتری تلفنی آزمایشی|09125556677">مشتری تلفنی آزمایشی</option></select></div>
+<div class="field span6"><label>نام کامل مشتری</label><input id="clientName" class="control" readonly></div><div class="field span6"><label>تلفن همراه</label><input id="mobile" class="control" readonly></div>
+<div class="field span4"><label>مرکز نگهداری</label><select id="center" class="control"><option value="">یک مورد انتخاب کنید</option><option>تهران</option><option>اصفهان</option><option>مشهد</option></select></div><div class="field span4"><label>جایگاه ارسال</label><select id="dispatch" class="control"><option value="">یک مورد انتخاب کنید</option><option>تحویل در انبار</option><option>ارسال به مشتری</option></select></div><div class="field span4"><label>نام انبار (صرفاً پیشنهادی)</label><select id="warehouse" class="control" onchange="recalculate()"></select></div>
+<div class="field span6"><label>نام کالا</label><input id="chosenProduct" class="control" readonly></div><div class="field span6"><label>انتخاب کالای معادل در انبار</label><select id="equivalent" class="control"><option>نیازی به انتخاب کالای معادل نیست</option><option>بررسی کالای معادل (نمونه)</option></select></div>
+<div class="field span4"><label>منبع اعلام قیمت</label><input id="selectedSource" class="control" readonly></div><div class="field span4"><label>روش تسویه قیمت انتخابی</label><input id="selectedSettlement" class="control" readonly></div><div class="field span4"><label>اعتبار قیمت</label><input id="selectedValidity" class="control" readonly></div>
+<div class="info-strip" id="inventoryNote">ℹ موجودی فقط بر حسب کیلوگرم نمایش داده می‌شود. انتخاب انبار رزرو محسوب نمی‌شود.</div>
+<div class="field span3"><label>قیمت واحد (ریال / واحد فروش)</label><input class="control num" id="unitPrice" type="number" min="0.01" step="any" oninput="recalculate()" readonly></div><div class="field span2"><label>مقدار</label><input class="control num" id="qty" type="number" min="0.001" step="any" value="100" oninput="recalculate()"></div><div class="field span2"><label>واحد</label><select id="unit" class="control" onchange="recalculate()"><option value="kg">کیلوگرم</option><option value="ton">تن</option><option value="branch">شاخه</option></select></div><div class="field span2"><label>قیمت کل (ریال)</label><input id="lineTotal" class="control" readonly></div><div class="field span3"><label>توضیحات کالا / خدمات</label><textarea id="detailNote" class="control" rows="2"></textarea></div>
+<div class="span12"><div id="lineSummary" class="summarygrid"></div></div></div><div id="modalError" class="error"></div><div class="formfoot"><button class="btn btngreen" onclick="addLine()">✓ افزودن قلم به سبد پیش‌فاکتور</button><button class="btn btnlight" onclick="closeModal()">انصراف</button></div></div></div>
+<div id="inquiryOverlay" class="overlay"><div class="modal" style="max-width:780px" role="dialog" aria-modal="true"><button class="close" onclick="closeInquiry()">×</button><div class="modalHeading">ثبت درخواست استعلام تأمین بیرونی ـ ادمین</div><div class="formgrid"><div class="field span6"><label>کالا</label><select class="control" id="inqProduct"></select></div><div class="field span6"><label>روش تسویه</label><select class="control" id="inqSettlement"></select></div><div class="field span6"><label>مقدار درخواستی (کیلوگرم)</label><input class="control" id="inqQuantity" type="number" min="1" value="1000"></div><div class="field span6"><label>مهلت اعلام (اختیاری)</label><input class="control" id="inqDeadline" type="date"></div><div class="field span12"><label>شرح درخواست / مشخصات فنی</label><textarea class="control" id="inqNote" rows="3" placeholder="توضیحات سایز، برند، کیفیت و محل تحویل"></textarea></div><div class="span12 notice">پس از ثبت درخواست، فرم درج نتیجه باز می‌شود. تا ثبت قیمت جدید، قیمت قبلی در جدول حفظ می‌شود. قیمت فروش پیش‌فاکتور تغییر نمی‌کند.</div></div><div class="error" id="inqError"></div><div class="formfoot"><button class="btn btngreen" onclick="saveInquiry()">ثبت درخواست استعلام</button><button class="btn btnlight" onclick="closeInquiry()">انصراف</button></div></div></div>
+<div id="quoteOverlay" class="overlay"><div class="modal" style="max-width:750px" role="dialog" aria-modal="true"><button class="close" onclick="closeQuote()">×</button><div class="modalHeading">ثبت نتیجه استعلام و اعلام قیمت فروش</div><p id="quoteTitle"></p><div class="formgrid"><div class="field span6"><label>نام تأمین‌کننده</label><input id="quoteSupplier" class="control" placeholder="تأمین‌کننده نمونه"></div><div class="field span6"><label>قیمت اعلامی تأمین‌کننده (ریال/کیلو)</label><input id="quoteCost" type="number" min="1" class="control"></div><div class="field span6"><label>قیمت فروش مهندسی فروش (در این فرم تغییر نمی‌کند)</label><input id="quoteSale" type="text" class="control" value="بدون تغییر" readonly></div><div class="field span6"><label>اعتبار قیمت</label><input id="quoteExpiry" type="date" class="control"></div><div class="span12 notice note-warn">با ثبت نتیجه، آخرین قیمت بازرگانی و زمان اعلام در همان ردیف فوراً جایگزین می‌شود؛ قیمت فروش مهندسی فروش تغییر نمی‌کند.</div></div><div id="quoteError" class="error"></div><div class="formfoot"><button class="btn btngreen" onclick="saveQuote()">ثبت قیمت خام بیرون</button><button class="btn btnlight" onclick="closeQuote()">انصراف</button></div></div></div><div id="reviewOverlay" class="overlay"><div class="modal" style="max-width:740px" role="dialog" aria-modal="true"><button class="close" onclick="closeReview()">×</button><div class="modalHeading">بررسی نهایی و ثبت آزمایشی پیش‌فاکتور</div><div id="reviewBody"></div><div class="formfoot"><button class="btn btngreen" onclick="finalize()">✓ ثبت پیش‌فاکتور آزمایشی</button><button class="btn btnlight" onclick="closeReview()">بازگشت</button></div></div></div><div id="toast" class="toast"></div>
+<div class="overlay" id="trendOverlay" role="dialog" aria-modal="true" aria-labelledby="trendHeading"><section class="modal trend-modal"><button class="close" onclick="closeTrend()" aria-label="بستن">×</button><div class="modalHeading" id="trendHeading">تاریخچه تغییرات قیمت کالا</div><div class="trend-header"><div><b id="trendProduct"></b><div class="tiny muted" id="trendPeriodLabel">از ابتدای ۱۴۰۵ تا آخرین اعلام</div></div><div class="field"><label for="trendWindow">بازه نمودار</label><select id="trendWindow" class="control trend-select" onchange="renderTrend()"><option value="week">هفتگی (۷ روز اخیر)</option><option value="month">ماهانه (۳۰ روز اخیر)</option><option value="year" selected>سالانه (از ابتدای ۱۴۰۵)</option></select></div><div class="field"><label for="trendType">نوع قیمت</label><select id="trendType" class="control trend-select" onchange="renderTrend()"></select></div></div><div class="trend-legend"><span class="trend-dot"></span><b id="trendSeriesName"></b><span class="muted tiny">ریال به ازای هر کیلوگرم</span></div><div id="trendChart"></div><p class="trend-note">مقادیر تاریخچه در این نسخه نمایشی و ساختگی‌اند. در سامانه واقعی باید سوابق ثبت‌شده و تأییدشده از پایگاه داده خوانده شوند. روند قیمت فروش بر اساس روش تسویه انتخاب‌شده نمایش داده می‌شود. قیمت خام فقط برای کاربران دارای مجوز قابل مشاهده است.</p><div class="monthly-extremes" id="monthlyExtremes" aria-live="polite"><div class="extreme-card min"><span>↓ حداقل قیمت ۳۰ روز اخیر</span><strong id="monthlyMin">—</strong><small id="monthlyMinDate"></small></div><div class="extreme-card max"><span>↑ حداکثر قیمت ۳۰ روز اخیر</span><strong id="monthlyMax">—</strong><small id="monthlyMaxDate"></small></div></div><div class="scroll"><table><thead><tr><th>تاریخ و ساعت اعلام</th><th>قیمت</th><th>تغییر نسبت به قبل</th></tr></thead><tbody id="trendHistory"></tbody></table></div><div class="formfoot"><button class="btn btnlight" onclick="closeTrend()">بستن</button></div></section></div>
+<script>
+'use strict';
+// Every record represents an announced price for a specific product, size and settlement method.
+// Sample prices, dates and stocks are intentionally fictional.
+const prices=[
+{id:101,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'نقد پای بار',price:966000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:102,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف ۵ روز',price:970000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:103,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف از ۶ روز تا ۱۵ روز',price:977500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:104,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف ۱ ماهه',price:994000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:105,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف از ۳۵ الی ۴۵ روز',price:1006500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:106,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف ۲ ماهه',price:1022000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:107,code:'100000000000201',name:'میلگرد 7225 پیلینگ ES سایز 200',size:'۲۰۰',source:'internal',settlement:'عرف ۳ ماهه',price:1043500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:1250},{name:'انبار ۱۷ شهریور',qty:420}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:108,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'نقد پای بار',price:915000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:109,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف ۵ روز',price:921000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:110,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف از ۶ روز تا ۱۵ روز',price:929500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:111,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف ۱ ماهه',price:946000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:112,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف از ۳۵ الی ۴۵ روز',price:958000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:113,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف ۲ ماهه',price:977000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:114,code:'100000000000115',name:'میلگرد 7225 فورج ES سایز 115',size:'۱۱۵',source:'internal',settlement:'عرف ۳ ماهه',price:993000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[{name:'انبار فتح',qty:680},{name:'انبار خلیج فارس',qty:930}],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:115,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'نقد پای بار',price:849000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:116,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف ۵ روز',price:855000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:117,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف از ۶ روز تا ۱۵ روز',price:862000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:118,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف ۱ ماهه',price:876500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:119,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف از ۳۵ الی ۴۵ روز',price:888000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:120,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف ۲ ماهه',price:902000,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true},
+{id:121,code:'100000000000722',name:'تسمه 7225 اصفهان PRT',size:'تمامی سایزها',source:'inquiry',settlement:'عرف ۳ ماهه',price:922500,expiry:'۱۴۰۵/۰۹/۰۵',stock:[],announcedAt:'2026-11-22T12:30:00',isDemoPrice:true}
+];
+const sourceLabels={internal:'انبار داخلی',inquiry:'قیمت استعلامی'};
+const $=id=>document.getElementById(id),fmt=n=>new Intl.NumberFormat('fa-IR',{maximumFractionDigits:3}).format(n),money=n=>fmt(Math.round(n)),stock=p=>p.stock.reduce((a,w)=>a+w.qty,0);
+// Show the latest engineering-sales announcement for each product, size and settlement.
+// Source timestamps use ISO local datetime; tie-breaker is the record id.
+function latestPrices(){
+ const latest=new Map();
+ for(const p of prices){
+   if(p.source!=='inquiry')continue;
+   const key=[p.code,p.size,p.settlement].join('|');
+   const prev=latest.get(key);
+   if(!prev || p.announcedAt>prev.announcedAt || (p.announcedAt===prev.announcedAt && p.id>prev.id))latest.set(key,p);
+ }
+ return prices.filter(p=>p.source!=='inquiry'||latest.get([p.code,p.size,p.settlement].join('|'))===p);
+}
+const latestAnnouncements=latestPrices();
+// All seven methods have explicitly stored example prices; no runtime percentage formula.
+// These are illustrative records, NOT real engineering-sales price announcements.
+const displayPrices=[...latestAnnouncements];
+function announcedLabel(p){
+ if(!p.announcedAt)return '—';
+ // Persian calendar and time, with fixed local components (no timezone shifts).
+ const [date,time]=p.announcedAt.split('T');
+ const [year,month,day]=date.split('-').map(Number);
+ const [h,m]=time.split(':').map(Number);
+ const d=new Date(Date.UTC(year,month-1,day,12,0,0));
+ const j=new Intl.DateTimeFormat('fa-IR-u-ca-persian',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'UTC'}).format(d);
+ return j+' ساعت '+new Intl.NumberFormat('fa-IR',{minimumIntegerDigits:2,useGrouping:false}).format(h)+':'+new Intl.NumberFormat('fa-IR',{minimumIntegerDigits:2,useGrouping:false}).format(m);
+}
+let chosen=null,cart=[],noticeTimer;
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function warehouseDetails(p){return `<div class="stock-total">جمع: ${fmt(stock(p))} کیلوگرم</div><div class="stock-list">${p.stock.map(w=>`<span class="stock-item"><span>${safe(w.name)}</span><strong>${fmt(w.qty)} کیلوگرم</strong></span>`).join('')}</div>`;}
+const settlementOrder=['نقد پای بار', 'عرف ۵ روز', 'عرف از ۶ روز تا ۱۵ روز', 'عرف ۱ ماهه', 'عرف از ۳۵ الی ۴۵ روز', 'عرف ۲ ماهه', 'عرف ۳ ماهه'];
+const priceGroups=new Map();
+for(const p of displayPrices){
+ const key=[p.source,p.code,p.size].join('|');
+ if(!priceGroups.has(key))priceGroups.set(key,[]);
+ priceGroups.get(key).push(p);
+}
+const rowSelected=new Map();
+function groupKey(p){return [p.source,p.code,p.size].join('|');}
+function changeRowSettlement(key,settlement){
+ rowSelected.set(key,settlement);
+ render();
+}
+function rowOptions(group,selected){return settlementOrder.map(v=>`<option value="${safe(v)}" ${selected===v?'selected':''}>${safe(v)}</option>`).join('');}
+const productCatalog=[...new Map(displayPrices.map(p=>[p.code+'|'+p.size,p])).values()];
+const rawExternal=new Map();
+// قیمت داخلی نمونه، مستقل از قیمت فروش و بدون محاسبه از آن
+const rawInternalCosts={};
+// Demo-only raw supplier costs; not derived from selling prices.
+const demoRawCosts={'100000000000201':905000,'100000000000115':862000,'100000000000722':812000};
+for(const p of productCatalog){if(demoRawCosts[p.code])rawExternal.set(p.code+'|'+p.size,{price:demoRawCosts[p.code],at:'2026-10-12T10:45:00',settlement:'نقد پای بار'});}
+const comparisonGroups=new Map();
+for(const item of displayPrices){const k=item.code+'|'+item.size;if(!comparisonGroups.has(k))comparisonGroups.set(k,{code:item.code,size:item.size,name:item.name,internal:[],inquiry:[]});comparisonGroups.get(k)[item.source].push(item);}
+function pickLatest(a,settlement){return a.filter(p=>p.settlement===settlement).sort((x,y)=>y.announcedAt.localeCompare(x.announcedAt)||y.id-x.id)[0]||null;}
+
+// Demo price unit per catalog product; real system must load it from the sales price announcement.
+const salesUnits={'100000000000201':'شاخه','100000000000115':'شاخه','100000000000722':'کیلوگرم'};
+function salesUnit(p){return salesUnits[p.code]||'کیلوگرم';}
+const commerceSettlement=new Map();
+for(const p of productCatalog){commerceSettlement.set(p.code+'|'+p.size,'نقد پای بار');}
+
+// EXAMPLE ONLY: In production resolve these five attributes through the real Rahkaran-product mapping.
+const demoProductMeta={
+ '100000000000201':{rahCode:'100000000000201',group:'میلگرد فولادی (7225) MO40 پیلینگ اسفراین 120-495',name:'میلگرد 7225 پیلینگ ES سایز 200',shape:'میلگرد',material:'فولاد آلیاژی',grade:'MO40',spec:'پیلینگ',maker:'اسفراین'},
+ '100000000000115':{rahCode:'100000000000115',group:'میلگرد فولادی (7225) MO40 فورج اسفراین تا 115',name:'میلگرد 7225 فورج ES سایز 115',shape:'میلگرد',material:'فولاد آلیاژی',grade:'MO40',spec:'فورج',maker:'اسفراین'},
+ '100000000000722':{rahCode:'100000000000722',group:'تسمه PRT فولادی (7225) MO40 فورج اصفهان تمامی سایزها',name:'تسمه 7225 اصفهان PRT',shape:'تسمه',material:'فولاد آلیاژی',grade:'MO40',spec:'فورج',maker:'اصفهان'}
+};
+function productMeta(p){return demoProductMeta[p.code]||{rahCode:p.code,group:p.name,name:p.name+' '+p.size,shape:'سایر',material:'سایر',grade:'سایر',spec:'سایر',maker:'سایر'};}
+function setupProductFilters(){
+ const items=[...new Map(displayPrices.map(p=>[p.code,p])).values()].map(productMeta);
+ const pairs=[['shapeFilter','shape'],['materialFilter','material'],['gradeFilter','grade'],['specFilter','spec'],['makerFilter','maker']];
+ pairs.forEach(([id,prop])=>{const select=$(id);const options=[...new Set(items.map(x=>x[prop]))].sort((a,b)=>a.localeCompare(b,'fa'));select.innerHTML+=options.map(v=>`<option value="${safe(v)}">${safe(v)}</option>`).join('');});
+}
+
+function render(){
+ const term=$('nameFilter').value.trim().toLocaleLowerCase('fa');
+ const selected={shape:$('shapeFilter').value,material:$('materialFilter').value,grade:$('gradeFilter').value,spec:$('specFilter').value,maker:$('makerFilter').value};
+ const settlement=$('settlementFilter').value, source=$('sourceFilter').value;
+ const visible=[];
+ for(const [key,group] of priceGroups){
+  const sample=group[0],meta=productMeta(sample);
+  const search=[sample.name,sample.code,sample.size,meta.group,meta.name,meta.rahCode].join(' ').toLocaleLowerCase('fa');
+  if((term&&!search.includes(term))||(source&&sample.source!==source)||Object.keys(selected).some(k=>selected[k]&&selected[k]!==meta[k]))continue;
+  const desired=rowSelected.get(key)||(settlement||'نقد پای بار');
+  visible.push({key,group,sample,meta,desired,sale:pickLatest(group,desired)});
+ }
+ const canViewRaw=$('rawAccess').checked;
+ const admin=$('adminMode').checked;
+ $('rows').innerHTML=visible.map(({key,group,sample,meta,desired,sale})=>{
+   const internal=sample.source==='internal';
+   const rawKey=sample.code+'|'+sample.size,raw=rawExternal.get(rawKey);
+   const rawSettlement=raw?.settlement||commerceSettlement.get(rawKey)||'نقد پای بار';
+   const rawTime=raw?.at?`<span class="raw-price-time" title="زمان اعلام قیمت پایه"><span class="clock">◷</span><span>${announcedLabel({announcedAt:raw.at})}</span></span>`:'<span class="muted tiny">هنوز اعلام نشده</span>';
+   const rawCell=canViewRaw?`<div class="raw-only-inquiry"><div class="raw-price-label">قیمت بازرگانی <span class="commerce-settlement">${safe(rawSettlement)}</span></div><div class="raw-price-inline"><span class="raw-price-value">${raw?money(raw.price):'ثبت نشده'}</span>${rawTime}</div>${internal&&admin?`<button class="raw-request" onclick="refreshRawPrice('${safe(rawKey)}',this)" title="بروزرسانی قیمت بازرگانی">＋ درخواست قیمت بازرگانی</button>`:''}</div>`:'<span class="muted tiny">فقط کاربران مجاز</span>';
+   const stockInfo=internal?warehouseDetails(sale||sample):'<span class="muted">موجودی انبار داخلی ندارد</span>';
+   const badge=internal?'<span class="source-badge source-internal">● انبار داخلی</span>':'<span class="source-badge source-inquiry">● کالای استعلامی</span>';
+   return `<tr class="${internal?'internal-record':'inquiry-record'}"><td class="rahkaran-code-cell"><code class="rahkaran-code" dir="ltr">${safe(String(meta.rahCode).padStart(15,'0'))}</code></td><td class="group-cell">${safe(meta.group)}</td><td><b class="name">${safe(meta.name)}</b><div class="tiny muted">سایز: ${safe(sample.size)}</div></td><td>${badge}</td>${canViewRaw?`<td class="raw-column raw-price-cell">${rawCell}</td>`:''}<td><select class="control row-settlement" onchange="changeRowSettlement('${safe(key)}',this.value)">${rowOptions(group,desired)}</select></td><td><b class="ok">${sale?money(sale.price):'—'}</b><div class="tiny muted">ریال / ${safe(salesUnit(sample))}</div></td><td class="tiny">${canViewRaw?rawTime:'—'}</td><td>${stockInfo}</td><td class="trend-cell"><button type="button" class="trend-button" onclick="openTrend('${safe(key)}')" title="روند هفتگی، ماهانه، سالانه">📈 مشاهده روند</button></td><td class="change-cell">${buildPriceChange(key,sale)}</td><td><div class="toolbar-inline">${sale?`<button class="cartIcon" title="افزودن به سبد" onclick="showModal(${sale.id})">🛒</button>`:''}</div></td></tr>`;
+ }).join('')||`<tr><td colspan="${canViewRaw?12:11}" class="empty">کالایی با فیلترهای انتخابی یافت نشد.</td></tr>`;
+ document.querySelectorAll('th.raw-column').forEach(el=>el.style.display=canViewRaw?'':'none');
+ applyPriceColumnWidths();
+ $('matchCount').textContent='('+fmt(visible.length)+' ردیف)';
+ $('shownCount').textContent=fmt(visible.length)+' ردیف قیمت تفکیک‌شده بر اساس منبع';
+}
+// Demo-only direct refresh. Production must fetch the latest approved raw supplier
+// announcement from the server. No modal and no implicit price calculation.
+const demoRefreshCount=new Map();
+const demoLatestRawPrices={
+ '100000000000201':[909500,914000,916500],
+ '100000000000115':[866500,871000,873500],
+ '100000000000722':[816500,821000,823500]
+};
+function refreshRawPrice(key,button){
+ if(!$('adminMode').checked || !$('rawAccess').checked){toast('دسترسی به این عملیات وجود ندارد.');return;}
+ const code=key.split('|')[0];
+ const values=demoLatestRawPrices[code];
+ if(!values){toast('برای این کالا قیمت نمونه جدیدی وجود ندارد.');return;}
+ const index=demoRefreshCount.get(key)||0;
+ const price=values[index%values.length];
+ demoRefreshCount.set(key,index+1);
+ const now=new Date();
+ const localTime=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-')+'T'+[String(now.getHours()).padStart(2,'0'),String(now.getMinutes()).padStart(2,'0'),'00'].join(':');
+ const announcement={price,at:localTime,source:'mock-refresh'};
+ const history=rawExternalHistory.get(key)||[];
+ history.push(announcement);
+ rawExternalHistory.set(key,history);
+ rawExternal.set(key,announcement);
+ render();
+ toast('قیمت بازرگانی به '+money(price)+' ریال به‌روزرسانی شد (قیمت آزمایشی).');
+}
+let inquiryRequests=[],activeRequest=null,nextRequest=1;
+// Price history is retained; the latest registered announcement is shown in the table.
+const rawExternalHistory=new Map([...rawExternal].map(([key,value])=>[key,[{...value,requestId:null}]]));
+function openInquiry(key){if(!$('adminMode').checked){toast('این عملیات مخصوص ادمین است.');return;} $('inqProduct').innerHTML=[...comparisonGroups].map(([k,g])=>`<option value="${safe(k)}">${safe(g.name)} | ${safe(g.size)}</option>`).join('');$('inqSettlement').innerHTML=settlementOrder.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('');$('inqProduct').value=key||[...comparisonGroups.keys()][0];$('inqSettlement').value=rowSelected.get(key)||$('settlementFilter').value||'نقد پای بار';$('inqError').textContent='';$('inquiryOverlay').classList.add('open');}
+function closeInquiry(){$('inquiryOverlay').classList.remove('open');}
+function saveInquiry(){const qty=Number($('inqQuantity').value),key=$('inqProduct').value,settlement=$('inqSettlement').value;if(!key||!Number.isFinite(qty)||qty<=0){$('inqError').textContent='کالا و مقدار مثبت معتبر الزامی‌اند.';return;}const request={id:nextRequest++,key,settlement,qty,note:$('inqNote').value,status:'در انتظار دریافت قیمت تأمین‌کننده'};inquiryRequests.unshift(request);closeInquiry();renderRequests();toast('درخواست ثبت شد. تا اعلام نتیجه، قیمت قبلی محفوظ است.');openQuote(request.id);}
+function renderRequests(){$('requestsPanel').style.display=$('adminMode').checked?'block':'none';$('requestList').innerHTML=inquiryRequests.map(r=>{const g=comparisonGroups.get(r.key);return `<div style="display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px;border-bottom:1px solid #eee;flex-wrap:wrap"><span><b>درخواست #${fmt(r.id)}</b> ـ ${safe(g.name)} (${safe(g.size)}) ـ ${safe(r.settlement)} ـ ${fmt(r.qty)} کیلوگرم <small class="muted">${safe(r.status)}</small>${r.announcedPrice?` <small class="muted"> ـ قیمت: ${money(r.announcedPrice)} ـ زمان: ${announcedLabel({announcedAt:r.announcedAt})}</small>`:''}</span>${r.status.startsWith('در انتظار')?`<button class="btn btnborder" onclick="openQuote(${r.id})">ثبت نتیجه استعلام</button>`:''}</div>`}).join('هنوز درخواستی ثبت نشده است.');}
+function openQuote(id){activeRequest=inquiryRequests.find(x=>x.id===id);if(!activeRequest)return;const g=comparisonGroups.get(activeRequest.key);$('quoteTitle').textContent=g.name+' | '+g.size+' | '+activeRequest.settlement;$('quoteSupplier').value='';$('quoteCost').value='';$('quoteSale').value='بدون تغییر';$('quoteExpiry').value='';$('quoteError').textContent='';$('quoteOverlay').classList.add('open');}
+function closeQuote(){$('quoteOverlay').classList.remove('open');}
+function saveQuote(){
+ if(!activeRequest)return;
+ const cost=Number($('quoteCost').value),supplier=$('quoteSupplier').value.trim();
+ if(!supplier||!Number.isFinite(cost)||cost<=0){$('quoteError').textContent='نام تأمین‌کننده و قیمت خام مثبت الزامی هستند.';return;}
+ const now=new Date();
+ const key=activeRequest.key;
+ const announcement={price:cost,at:now.toISOString(),supplier,requestId:activeRequest.id};
+ const history=rawExternalHistory.get(key)||[];
+ history.push(announcement);
+ rawExternalHistory.set(key,history);
+ // The newest registered announcement replaces the previously displayed raw price.
+ const latest=history.reduce((a,b)=>!a||Date.parse(b.at)>=Date.parse(a.at)?b:a,null);
+ rawExternal.set(key,latest);
+ activeRequest.status='قیمت بازرگانی اعلام شد (آزمایشی)';
+ activeRequest.announcedPrice=cost;
+ activeRequest.announcedAt=announcement.at;
+ closeQuote();render();renderRequests();toast('آخرین قیمت بازرگانی و زمان اعلام در همان ردیف به‌روزرسانی شد.');
+}
+
+// Historical data in this standalone demonstration is synthetic, not official quotations.
+let activeTrendKey=null;
+const historyDates=['2026-03-21T10:00:00','2026-04-24T11:20:00','2026-05-27T09:45:00','2026-07-08T13:10:00','2026-08-18T11:15:00','2026-09-20T14:05:00'];
+function demoPoints(current,code){
+ const jitter=[0,1,-1,2,0,-2].map((v,i)=>v*((code.length%3)+1)*0.003);
+ const ratios=[0.83,0.865,0.88,0.94,0.96,0.985];
+ return historyDates.map((at,i)=>({at,price:Math.round(current*(ratios[i]+jitter[i])/500)*500}));
+}
+
+function buildPriceChange(key,sale){
+ if(!sale || !Number.isFinite(sale.price)) return '<span class="muted">—</span>';
+ const group=priceGroups.get(key)||[];
+ const oldRecords=group.filter(p=>p.settlement===sale.settlement && p.id!==sale.id && p.announcedAt<sale.announcedAt).sort((a,b)=>b.announcedAt.localeCompare(a.announcedAt));
+ // Standalone demo: simulate historical values where actual previous announcements are unavailable.
+ const previous=oldRecords.length?oldRecords[0].price:demoPoints(sale.price,sale.code).slice(-1)[0].price;
+ if(!Number.isFinite(previous)||previous<=0) return '<span class="muted">بدون سابقه</span>';
+ const delta=sale.price-previous, percent=delta/previous*100;
+ const trend=delta>0?'up':delta<0?'down':'flat';
+ const arrow=delta>0?'↗':delta<0?'↘':'→';
+ const magnitude=Math.abs(delta);
+ return `<div class="price-change ${trend}" title="مقایسه با قیمت اعلامی قبلی همان کالا و همان روش تسویه (داده‌های نمونه)"><span class="change-top"><span class="change-arrow">${arrow}</span><strong>${fmt(magnitude)} ریال</strong></span><span class="change-bottom">${delta>0?'+':delta<0?'−':''}${new Intl.NumberFormat('fa-IR',{minimumFractionDigits:1,maximumFractionDigits:1}).format(Math.abs(percent))}٪ ${delta>0?'افزایش':delta<0?'کاهش':'بدون تغییر'}</span></div>`;
+}
+
+function periodTrendPoints(latest,period){
+ // Sample-only deterministic time series: production must use actual price history.
+ const end=new Date('2026-10-14T12:00:00');
+ const rangeDays=period==='week'?7:period==='month'?30:207;
+ const count=period==='week'?8:period==='month'?11:13;
+ const codeSeed=Array.from(latest.code||'').reduce((x,c)=>x+c.charCodeAt(0),0);
+ const values=[];
+ for(let i=0;i<count;i++){
+  const pos=i/(count-1),daysAgo=Math.round(rangeDays*(1-pos));
+  const at=new Date(end.getTime()-daysAgo*86400000);
+  const windowSwing=period==='week'?0.018:period==='month'?0.055:0.19;
+  const base=1-windowSwing*(1-pos);
+  const variation=(Math.sin((i+codeSeed)*1.29)-Math.sin((count-1+codeSeed)*1.29))*windowSwing*.17;
+  values.push({at:at.toISOString(),price:Math.round(latest.price*(base+variation)/100)*100});
+ }
+ values[values.length-1].price=latest.price;
+ return values;
+}
+function buildInlineTrend(key,sale){
+ if(!sale || !Number.isFinite(sale.price)) return '<span class="muted">—</span>';
+ const period=$('trendWindow')?.value||'year';
+ const periodLabels={week:'۷ روز اخیر',month:'۳۰ روز اخیر',year:'از ابتدای ۱۴۰۵'};
+ const points=periodTrendPoints(sale,period);
+ const w=170,h=52,pad=6,values=points.map(p=>p.price),mn=Math.min(...values),mx=Math.max(...values),range=Math.max(mx-mn,1);
+ const x=i=>pad+(w-2*pad)*i/(points.length-1);
+ const y=v=>h-pad-(v-mn)/range*(h-2*pad);
+ const coords=points.map((p,i)=>x(i).toFixed(1)+','+y(p.price).toFixed(1)).join(' ');
+ const first=values[0],last=values[values.length-1],diff=last-first;
+ const dirClass=diff>0?'up':diff<0?'down':'flat';
+ const dirText=diff>0?'↗ صعودی':diff<0?'↘ نزولی':'→ ثابت';
+ const pct=first?Math.abs(diff/first*100).toFixed(1):'0.0';
+ return `<div class="inline-trend" title="روند قیمت فروش، ${periodLabels[period]} (داده آزمایشی)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="نمودار قیمت ${periodLabels[period]}"><line class="axisline" x1="${pad}" y1="${h-pad}" x2="${w-pad}" y2="${h-pad}"/><polyline class="spark" points="${coords}"/><circle class="dot" cx="${x(points.length-1)}" cy="${y(last)}" r="3.2"/></svg><div class="labels"><span>${period==='year'?'ابتدای ۱۴۰۵':period==='month'?'۳۰ روز قبل':'۷ روز قبل'}</span><span>اکنون</span></div><div class="summary ${dirClass}">${dirText} ${pct}٪</div></div>`;
+}
+
+function openTrend(key){
+ activeTrendKey=key;
+ const group=priceGroups.get(key);if(!group)return;
+ const p=group[0],access=$('rawAccess').checked;
+ $('trendProduct').textContent=p.name+' | '+p.size+' | '+(p.source==='internal'?'انبار داخلی':'کالای استعلامی');
+ $('trendType').innerHTML='<option value="sale">قیمت فروش (روش تسویه انتخاب‌شده)</option>'+(access?'<option value="external">قیمت بازرگانی</option>':'');
+ $('trendWindow').value='year';
+ $('trendOverlay').classList.add('open');renderTrend();
+}
+function closeTrend(){$('trendOverlay').classList.remove('open');activeTrendKey=null;}
+function renderTrend(){
+ if(!activeTrendKey)return;const group=priceGroups.get(activeTrendKey);if(!group)return;
+ const product=group[0],kind=$('trendType').value,settlement=rowSelected.get(activeTrendKey)||$('settlementFilter').value||'نقد پای بار';
+ const period=$('trendWindow').value;
+ const captions={week:'هفتگی — ۷ روز اخیر',month:'ماهانه — ۳۰ روز اخیر',year:'سالانه — از ابتدای ۱۴۰۵'};
+ $('trendPeriodLabel').textContent=captions[period];
+ let points=[],title='';
+ if(kind==='sale'){
+  title='قیمت فروش — '+settlement;
+  const latest=pickLatest(group,settlement);
+  if(latest)points=periodTrendPoints(latest,period);
+ }else if(kind==='external'&&$('rawAccess').checked){
+  title='قیمت بازرگانی';
+  const rawKey=product.code+'|'+product.size;
+  const latest=rawExternal.get(rawKey);
+  if(latest){
+   points=periodTrendPoints({code:product.code,price:latest.price},period);
+   // Reflect newer raw-price refreshes in the demonstration's latest point.
+   const history=rawExternalHistory.get(rawKey)||[];
+   if(history.length){const last=history[history.length-1];points[points.length-1]={at:last.at,price:last.price};}
+  }
+ }
+ points=points.filter(p=>p.at&&Number.isFinite(p.price)).sort((a,b)=>a.at.localeCompare(b.at));
+ // Always calculate the 30-day extremes for the currently selected price type and settlement,
+ // regardless of the chart's selected period. Synthetic data is only for this demo.
+ let monthPoints=[];
+ if(kind==='sale'){
+  const lastSale=pickLatest(group,settlement);
+  if(lastSale) monthPoints=periodTrendPoints(lastSale,'month');
+ }else if(kind==='external'&&$('rawAccess').checked){
+  const rk=product.code+'|'+product.size,latestRaw=rawExternal.get(rk);
+  if(latestRaw){
+   monthPoints=periodTrendPoints({code:product.code,price:latestRaw.price},'month');
+   const rawHistory=rawExternalHistory.get(rk)||[];
+   if(rawHistory.length) monthPoints[monthPoints.length-1]={at:rawHistory[rawHistory.length-1].at,price:rawHistory[rawHistory.length-1].price};
+  }
+ }
+ monthPoints=monthPoints.filter(p=>p.at&&Number.isFinite(p.price));
+ if(monthPoints.length){
+  const minP=monthPoints.reduce((a,b)=>b.price<a.price?b:a),maxP=monthPoints.reduce((a,b)=>b.price>a.price?b:a);
+  $('monthlyMin').textContent=money(minP.price)+' ریال';
+  $('monthlyMax').textContent=money(maxP.price)+' ریال';
+  $('monthlyMinDate').textContent='زمان اعلام: '+announcedLabel({announcedAt:minP.at});
+  $('monthlyMaxDate').textContent='زمان اعلام: '+announcedLabel({announcedAt:maxP.at});
+ }else{
+  $('monthlyMin').textContent=$('monthlyMax').textContent='داده‌ای موجود نیست';
+  $('monthlyMinDate').textContent=$('monthlyMaxDate').textContent='';
+ }
+ $('trendSeriesName').textContent=title;
+ if(!points.length){$('trendChart').innerHTML='<div class="empty">برای این روش تسویه سابقه قیمتی ثبت نشده است.</div>';$('trendHistory').innerHTML='';return;}
+ const w=810,h=245,pad=43,values=points.map(p=>p.price),mn=Math.min(...values),mx=Math.max(...values),range=Math.max(mx-mn,1),x=i=>pad+(w-2*pad)*i/Math.max(points.length-1,1),y=v=>h-pad-(v-mn)/range*(h-2*pad);
+ const coords=points.map((p,i)=>x(i).toFixed(1)+','+y(p.price).toFixed(1)).join(' ');
+ const grid=[0,1,2,3].map(i=>{const val=mn+range*i/3,yy=y(val);return `<line x1="${pad}" x2="${w-pad}" y1="${yy}" y2="${yy}" stroke="#e3ebf5"/><text x="${w-pad+7}" y="${yy+4}" fill="#60738b" font-size="11">${fmt(Math.round(val))}</text>`}).join('');
+ $('trendChart').innerHTML=`<svg class="trend-chart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w+75} ${h}" role="img" aria-label="نمودار تغییرات قیمت"><g>${grid}</g><polyline points="${coords}" fill="none" stroke="#2875c2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>${points.map((p,i)=>`<circle cx="${x(i)}" cy="${y(p.price)}" r="4.5" fill="#2875c2"><title>${safe(announcedLabel({announcedAt:p.at}))} - ${money(p.price)}</title></circle>`).join('')}<text x="${pad}" y="${h-12}" fill="#60738b" font-size="12">${period==='year'?'ابتدای ۱۴۰۵':period==='month'?'۳۰ روز قبل':'۷ روز قبل'}</text><text x="${w-pad-80}" y="${h-12}" fill="#60738b" font-size="12">آخرین اعلام</text></svg>`;
+ $('trendHistory').innerHTML=points.slice().reverse().map((p,i,arr)=>{const previous=i<arr.length-1?arr[i+1].price:null,diff=previous===null?null:p.price-previous;return `<tr><td>${safe(announcedLabel({announcedAt:p.at}))}</td><td><b>${money(p.price)}</b></td><td class="${diff>0?'trend-up':diff<0?'trend-down':''}">${diff===null?'—':(diff>0?'+':'')+money(diff)+' ('+(diff>0?'+':'')+(100*diff/Math.max(previous,1)).toFixed(1)+'٪)'}</td></tr>`}).join('');
+}
+
+function resetFilters(){['nameFilter','shapeFilter','materialFilter','gradeFilter','specFilter','makerFilter','sourceFilter'].forEach(id=>$(id).value='');$('settlementFilter').value='نقد پای بار';rowSelected.clear();render();}
+function scrollCart(){$('basket').scrollIntoView({behavior:'smooth'});}
+function showModal(id){chosen=displayPrices.find(p=>p.id===id);if(!chosen)return;$('chosenProduct').value=chosen.name+' | سایز '+chosen.size;$('selectedSource').value=sourceLabels[chosen.source];$('selectedSettlement').value=chosen.settlement;$('selectedValidity').value=chosen.expiry;$('unitPrice').value=chosen.price;$('qty').value='100';$('unit').value=salesUnit(chosen)==='شاخه'?'branch':'kg';$('detailNote').value='';$('modalError').textContent='';$('warehouse').innerHTML='<option value="">بدون انتخاب انبار</option>'+chosen.stock.map(w=>`<option value="${safe(w.name)}">${safe(w.name)} - ${fmt(w.qty)} کیلوگرم</option>`).join('');$('warehouse').disabled=!chosen.stock.length;$('center').value='';$('dispatch').value='';$('modalOverlay').classList.add('open');recalculate();}
+function closeModal(){$('modalOverlay').classList.remove('open');}
+function recalculate(){
+ if(!chosen)return;
+ const branch=salesUnit(chosen)==='شاخه';
+ const selected=$('unit').value;
+ const q=Number($('qty').value)*(selected==='ton'?1000:1);
+ const unitPrice=Number($('unitPrice').value);
+ const w=chosen.stock.find(w=>w.name===$('warehouse').value);
+ if(branch){
+   $('unit').value='branch';
+   $('lineTotal').value=Number.isFinite(q*unitPrice)?money(q*unitPrice):'';
+   $('lineSummary').innerHTML=`<span>مقدار: <b>${fmt(q)} شاخه</b></span><span>موجودی انبار: <b>${fmt(w?w.qty:0)} کیلوگرم</b></span><span>معادل وزن و کسری: <b>نامشخص</b></span>`;
+   $('inventoryNote').textContent='ℹ قیمت فروش بر حسب شاخه است ولی موجودی فقط کیلویی ثبت شده؛ بدون وزن استاندارد هر شاخه، امکان محاسبه پوشش موجودی وجود ندارد. انتخاب انبار رزرو محسوب نمی‌شود.';
+ }else{
+   const covered=w?Math.min(Math.max(q,0),w.qty):0,shortage=Math.max(0,q-covered);
+   $('lineTotal').value=Number.isFinite(q*unitPrice)?money(q*unitPrice):'';
+   $('lineSummary').innerHTML=`<span>مقدار معادل: <b>${fmt(q)} کیلوگرم</b></span><span>موجودی انبار پیشنهادی: <b>${fmt(w?w.qty:0)} کیلوگرم</b></span><span>پوشش پیشنهادی: <b>${fmt(covered)} کیلوگرم</b></span><span>نیازمند تأمین: <b>${fmt(shortage)} کیلوگرم</b></span>`;
+   $('inventoryNote').textContent='ℹ موجودی داخلی فقط کیلویی است. انتخاب انبار صرفاً پیشنهادی است؛ هیچ رزرو یا کاهش موجودی انجام نمی‌شود و ثبت کالای ناموجود مجاز است.';
+ }
+}
+function partyChange(){const lead=document.querySelector('input[name="party"]:checked').value==='lead';$('customer').disabled=lead;$('lead').disabled=!lead;$('clientName').value='';$('mobile').value='';}
+function clientChange(type){const s=$(type).value.split('|');$('clientName').value=s[0]||'';$('mobile').value=s[1]||'';}
+function addLine(){if(!chosen)return;const branch=salesUnit(chosen)==='شاخه';const q=Number($('qty').value)*(branch?1:($('unit').value==='ton'?1000:1)),p=Number($('unitPrice').value);if(!Number.isFinite(q)||q<=0||!Number.isFinite(p)||p<=0){$('modalError').textContent='مقدار و قیمت باید مثبت و معتبر باشند.';return;}if(!Number.isFinite(q*p)||q*p>Number.MAX_SAFE_INTEGER){$('modalError').textContent='مبلغ از محدوده قابل محاسبه این دمو بزرگ‌تر است.';return;}const w=chosen.stock.find(x=>x.name===$('warehouse').value);cart.push({id:chosen.id,name:chosen.name,size:chosen.size,source:chosen.source,settlement:chosen.settlement,price:p,qty:q,warehouse:w?w.name:'—',cover:branch?null:(w?Math.min(w.qty,q):0),unit:salesUnit(chosen),detail:$('detailNote').value,expiry:chosen.expiry});renderCart();closeModal();toast('قلم به سبد اضافه شد. برای افزودن قلم بعدی، روی آیکون سبد ردیف دیگری کلیک کنید.');}
+function renderCart(){$('headerCount').textContent='('+fmt(cart.length)+')';$('basketCount').textContent=fmt(cart.length)+' قلم';$('basketRows').innerHTML=cart.map((c,i)=>`<tr><td>${fmt(i+1)}</td><td><b>${safe(c.name)}</b><div class="tiny muted">${safe(c.size)}</div></td><td><span class="tag ${c.source}">${sourceLabels[c.source]}</span></td><td>${safe(c.settlement)}</td><td>${fmt(c.qty)} ${safe(c.unit||"کیلوگرم")}</td><td>${money(c.price)}</td><td>${money(c.price*c.qty)}</td><td>${safe(c.warehouse)}</td><td><button class="btn btnred" onclick="removeLine(${i})">حذف</button></td></tr>`).join('')||'<tr><td colspan="9" class="empty">هنوز کالایی به سبد اضافه نشده است.</td></tr>';$('totalCart').textContent='جمع کل: '+money(cart.reduce((sum,c)=>sum+c.price*c.qty,0))+' ریال';}
+function removeLine(i){cart.splice(i,1);renderCart();}
+function openReview(){if(!cart.length){toast('ابتدا یک کالا به سبد اضافه کنید.');return;}
+const settlements=[...new Set(cart.map(c=>c.settlement))];$('reviewBody').innerHTML=`<p>تعداد اقلام: <b>${fmt(cart.length)}</b></p><p>مبلغ کل: <b>${money(cart.reduce((sum,c)=>sum+c.price*c.qty,0))} ریال</b></p><p>مقدار کل اقلام کیلویی: <b>${fmt(cart.filter(c=>c.unit==='کیلوگرم').reduce((sum,c)=>sum+c.qty,0))} کیلوگرم</b></p><p>روش‌های تسویه انتخابی: <b>${safe(settlements.join('، '))}</b></p><div class="notice note-warn">${settlements.length>1?'هشدار: اقلام با روش‌های تسویه متفاوت در سبد وجود دارند. قبل از ثبت رسمی باید سازگاری شرایط پرداخت در سطح پیش‌فاکتور بررسی شود. ':''}قیمت‌های نمایش داده شده نمونه هستند و قیمت قطعی باید از واحد مهندسی فروش دریافت شود. این ثبت آزمایشی است و موجودی را رزرو یا کسر نمی‌کند.</div>`;$('reviewOverlay').classList.add('open');}
+function closeReview(){$('reviewOverlay').classList.remove('open');}
+function finalize(){closeReview();toast('پیش‌فاکتور آزمایشی ثبت شد؛ هیچ داده‌ای در سامانه واقعی ذخیره نشده است.');cart=[];renderCart();}
+function toast(msg){$('toast').textContent=msg;$('toast').style.display='block';clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('toast').style.display='none',4800);}
+
+// Column resizing is scoped exclusively to the announcement grid.
+const PRICE_COLUMN_DEFAULTS=[175,290,230,155,245,195,150,190,265,145,165,105];
+const PRICE_COLUMN_STORAGE='hamiran_price_grid_columns_v22';
+let priceGridWidths=PRICE_COLUMN_DEFAULTS.slice();
+function persistPriceColumns(){try{localStorage.setItem(PRICE_COLUMN_STORAGE,JSON.stringify(priceGridWidths));}catch(_){}}
+function applyPriceColumnWidths(){
+ const grid=document.getElementById('priceGrid');if(!grid)return;
+ const cols=grid.querySelectorAll('colgroup col');
+ const rawVisible=$('rawAccess').checked;
+ cols.forEach((col,i)=>{col.style.width=priceGridWidths[i]+'px';col.style.display=(i===4&&!rawVisible)?'none':'';});
+ const total=priceGridWidths.reduce((sum,v,i)=>sum+(i===4&&!rawVisible?0:v),0);
+ grid.style.width=total+'px';grid.style.minWidth='100%';
+}
+function resetPriceColumns(){priceGridWidths=PRICE_COLUMN_DEFAULTS.slice();persistPriceColumns();applyPriceColumnWidths();}
+function setupResizablePriceGrid(){
+ const grid=document.getElementById('priceGrid');if(!grid)return;
+ try{const val=JSON.parse(localStorage.getItem(PRICE_COLUMN_STORAGE)||'null');if(Array.isArray(val)&&val.length===12&&val.every(v=>Number.isFinite(v)&&v>=85&&v<=900))priceGridWidths=val;}catch(_){}
+ const group=document.createElement('colgroup');
+ PRICE_COLUMN_DEFAULTS.forEach(()=>group.appendChild(document.createElement('col')));
+ grid.insertBefore(group,grid.firstChild);
+ Array.from(grid.tHead.rows[0].cells).forEach((th,i)=>{
+   const grip=document.createElement('span');grip.className='resize-grip';grip.title='کشیدن برای تغییر عرض ستون';grip.setAttribute('role','separator');grip.setAttribute('aria-label','تغییر عرض '+th.textContent.trim());
+   th.appendChild(grip);
+   grip.addEventListener('pointerdown',ev=>{
+     if(ev.button!==0)return;ev.preventDefault();ev.stopPropagation();
+     const startX=ev.clientX,startWidth=priceGridWidths[i];
+     grip.classList.add('active');document.body.classList.add('resizing-columns');
+     const move=e=>{const width=Math.max(i===0?155:90,Math.min(900,startWidth+startX-e.clientX));priceGridWidths[i]=width;applyPriceColumnWidths();};
+     const finish=()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',finish);window.removeEventListener('pointercancel',finish);grip.classList.remove('active');document.body.classList.remove('resizing-columns');persistPriceColumns();};
+     window.addEventListener('pointermove',move);window.addEventListener('pointerup',finish,{once:true});window.addEventListener('pointercancel',finish,{once:true});
+   });
+ });
+ applyPriceColumnWidths();
+}
+
+$('allCount').textContent=fmt(latestAnnouncements.length);['internal','inquiry'].forEach(s=>$(s+'Count').textContent=fmt(latestAnnouncements.filter(p=>p.source===s).length));$('stockCount').textContent=fmt([...new Map(latestAnnouncements.filter(p=>p.source==='internal').map(p=>[p.code+'|'+p.size,p])).values()].reduce((sum,p)=>sum+stock(p),0));setupProductFilters();setupResizablePriceGrid();render();renderCart();renderRequests();
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeReview();closeInquiry();closeQuote();closeTrend();}});
+</script></body></html>
